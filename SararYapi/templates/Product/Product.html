@@ -1,0 +1,81 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+
+
+    {% include 'Base/Header.html' %}
+
+</head>
+
+{% include 'Base/NavBar2.html' %}
+
+<section class="module bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Ürünlerimiz</h2>
+
+            </div>
+        </div>
+        <div class="row client">
+            <div class="owl-carousel text-center" data-items="5" data-pagination="true" data-navigation="false">
+                <div class="owl-item">
+                    <div class="col-sm-3 col-lg-12 ">
+                        <h4 style="font-size: 17px; font-family:monospace;color:blueviolet">PVC MEBRAN KAPI</h4>
+                        <a href="{% url 'ProductDetail' %}"> <div class="client-logo"><img src="{% static 'images\mebran2.jpg'%}" alt="Client Logo" /></a>
+                            <h5 style="font-size: 14px; font-family:monospace;color:rgb(28, 51, 255)">MODEL 1</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item">
+                    <div class="col-sm-3 col-lg-12 ">
+                        <h4 style="font-size: 17px; font-family:monospace;color:blueviolet">PVC MEBRAN KAPI</h4>
+                        <div class="client-logo"><img src="{% static 'images\mebran2.jpg'%}" alt="Client Logo" />
+                            <h5 style="font-size: 14px; font-family:monospace;color:rgb(28, 51, 255)">MODEL 2</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item">
+                    <div class="col-sm-3 col-lg-12 ">
+                        <h4 style="font-size: 17px; font-family:monospace;color:blueviolet">PVC MEBRAN KAPI</h4>
+                        <div class="client-logo"><img src="{% static 'images\mebran4.jpg'%}" alt="Client Logo" />
+                            <h5 style="font-size: 14px; font-family:monospace;color:rgb(28, 51, 255)">MODEL 3</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item">
+
+                    <div class="col-sm-3 col-lg-12 ">
+                        <h4 style="font-size: 17px; font-family:monospace;color:blueviolet">PVC MEBRAN KAPI</h4>
+                        <div class="client-logo"><img src="{% static 'images\mebran5.jpg'%}" alt="Client Logo" />
+                            <h5 style="font-size: 14px; font-family:monospace;color:rgb(28, 51, 255)">MODEL 4</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item">
+                    <div class="col-sm-3 col-lg-12 ">
+                        <h4 style="font-size: 17px; font-family:monospace;color:blueviolet">PVC MEBRAN KAPI</h4>
+                        <div class="client-logo"><img src="{% static 'images\mebran5.jpg'%}" alt="Client Logo" />
+                            <h5 style="font-size: 14px; font-family:monospace;color:rgb(28, 51, 255)">MODEL 5</h5>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'Base/Footer.html' %}
+
+</body>
+
+</html>

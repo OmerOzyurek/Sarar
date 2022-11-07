@@ -1,0 +1,269 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {% include 'Base/Header.html' %}
+
+    <style>
+        .test li {
+            display: inline-block;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    {% include 'Base/NavBar2.html' %}
+
+    <section class="module" id="alt-features">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="alt-features-item">
+                        <img src="{% static 'images\sararlogo.png' %}">
+                    </div>
+                    <div class="alt-features-item">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <td>Açıklama</td>
+                                    <td>Bilgi</td>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Profil Genişliği</td>
+                                    <td>90 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>Sınıf</td>
+                                    <td> B Class - TS 5358 - EN 12608 </td>
+                                </tr>
+                                <tr>
+                                    <td>Conta</td>
+                                    <td>TPE Gri / Siyah </td>
+                                </tr>
+                                <tr>
+                                    <td>Conta Sayısı</td>
+                                    <td> 3 </td>
+                                </tr>
+                                <tr>
+                                    <td> Çıta </td>
+                                    <td> Tek tırnaklı - PCE contalı </td>
+
+                                </tr>
+                                <tr>
+                                    <td> Cam Kalınlıkları </td>
+                                    <td> 24, 30, 36, 44, 52 mm </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-6  ">
+                    <div class="alt-services-image align-center"><img src="{% static 'images\mebran2.jpg'%}"
+                            width="400px" /> </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="alt-features-item">
+                        <div class="alt-features-icon"></div>
+                        <h3 class="alt-features-title font-alt">Renk Seçenekleri</h3>
+
+                    </div>
+                    <div class="alt-features-item">
+                        <div class="container">
+                            <div class="test">
+                                <div><a href="#" ><img src="{% static 'images\Color\LMD_284_PREMUM_IHLAMUR.png'%}" width="55px" /></a>
+                                </div>
+                                <div style="margin-left:30px ;" >
+                                    <h3>
+                                        LMD 284 PREMUM IHLAMUR
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="test">
+                                <div><a href="#" ><img src="{% static 'images\Color\LMD_284_PREMUM_IHLAMUR.png'%}" width="55px" /></a>
+                                </div>
+                                <div style="margin-left:30px ;" >
+                                    <h3>
+                                        LMD 284 PREMUM IHLAMUR
+                                    </h3>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="container" style="background-color: rgb(0, 0, 0);">
+                        </div>
+                        <div class="container" style="background-color: rgb(30, 255, 0);">
+                        </div>
+                        <div class="container" style="background-color: rgb(56, 28, 28);">
+                        </div>
+                    </div>
+                    <div class="alt-features-item">
+                        <div class="section" id="renkler">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <h2 class="animatedleft"><span>Renkler</span></h2>
+                                  <div class="text animatedleft2">
+                                    <!--p>Winsa Pvc pencere,kapı ve Sürme sistemlerinde bulunan 13 renk seçeneği ile birlikte projelerinize özel yüzlerce farklı renk alternatifi sunar. Farklı iç-dış yüz kaplama opsiyonu ile de uygulama yapılan mekanlara farklı bir mimari dokunuş katar.</p-->
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <ul class="renk">
+                                          <li class="test" ><a href="javascript:void(0)" class="colorcat" data-id="26">
+                                              <img
+                                                src="https://www.winsa.com.tr/thumb.php?src=files/altinmesejpg_26-08-2020_17-15-13.jpg&amp;size=55x55"
+                                                data-toggle="tooltip" data-placement="top" title="Altın Meşe"
+                                                class="img-responsive animatedleft2" alt="">
+                                              <span>Altın Meşe</span></a></li>
+                                          <li ><a href="javascript:void(0)" class="colorcat" data-id="106">
+                                              <img
+                                                src="https://www.winsa.com.tr/thumb.php?src=files/antikmesejpg_26-08-2020_17-16-07.jpg&amp;size=55x55"
+                                                data-toggle="tooltip" data-placement="top" title="Antik Meşe"
+                                                class="img-responsive animatedleft2" alt="">
+                                              <span>Antik Meşe</span></a></li>
+                                          <li><a href="javascript:void(0)" class="colorcat" data-id="107">
+                                              <img
+                                                src="https://www.winsa.com.tr/thumb.php?src=files/antrasit-grijpg_26-08-2020_17-16-20.jpg&amp;size=55x55"
+                                                data-toggle="tooltip" data-placement="top" title="Antrasit Gri"
+                                                class="img-responsive animatedleft2" alt="">
+                                              <span>Antrasit Gri</span></a></li>
+                                          <li><a href="javascript:void(0)" class="colorcat" data-id="108">
+                                              <img
+                                                src="https://www.winsa.com.tr/thumb.php?src=files/findikjpg_26-08-2020_17-16-28.jpg&amp;size=55x55"
+                                                data-toggle="tooltip" data-placement="top" title="Fındık"
+                                                class="img-responsive animatedleft2" alt="">
+                                              <span>Fındık</span></a></li>
+                                          <li><a href="javascript:void(0)" class="colorcat" data-id="109">
+                                              <img
+                                                src="https://www.winsa.com.tr/thumb.php?src=files/crown-platinjpg_13-12-2021_20-05-28.jpg&amp;size=55x55"
+                                                data-toggle="tooltip" data-placement="top" title="Crown Platin"
+                                                class="img-responsive animatedleft2" alt="">
+                                              <span>Crown Platin</span></a></li>
+                                          <li><a href="javascript:void(0)" class="colorcat" data-id="110">
+                                              <img
+                                                src="https://www.winsa.com.tr/thumb.php?src=files/kremjpg_26-08-2020_17-16-45.jpg&amp;size=55x55"
+                                                data-toggle="tooltip" data-placement="top" title="Krem" class="img-responsive animatedleft2"
+                                                alt="">
+                                              <span>Krem</span></a></li>
+                                          <li><a href="javascript:void(0)" class="colorcat" data-id="111">
+                                              <img
+                                                src="https://www.winsa.com.tr/thumb.php?src=files/kulsiyahjpg_26-08-2020_17-16-54.jpg&amp;size=55x55"
+                                                data-toggle="tooltip" data-placement="top" title="K&uuml;l Siyahi"
+                                                class="img-responsive animatedleft2" alt="">
+                                              <span>K&uuml;l Siyahi</span></a></li>
+                                          <li><a href="javascript:void(0)" class="colorcat" data-id="112">
+                                              <img
+                                                src="https://www.winsa.com.tr/thumb.php?src=files/maunjpg_26-08-2020_17-17-18.jpg&amp;size=55x55"
+                                                data-toggle="tooltip" data-placement="top" title="Maun" class="img-responsive animatedleft2"
+                                                alt="">
+                                              <span>Maun</span></a></li>
+                                          <li><a href="javascript:void(0)" class="colorcat" data-id="113">
+                                              <img
+                                                src="https://www.winsa.com.tr/thumb.php?src=files/metalik-antrasitjpg_26-08-2020_17-17-24.jpg&amp;size=55x55"
+                                                data-toggle="tooltip" data-placement="top" title="Metalik Antrasit"
+                                                class="img-responsive animatedleft2" alt="">
+                                              <span>Metalik Antrasit</span></a></li>
+                                          <li><a href="javascript:void(0)" class="colorcat" data-id="114">
+                                              <img
+                                                src="https://www.winsa.com.tr/thumb.php?src=files/metalik-gumusjpg_26-08-2020_17-17-33.jpg&amp;size=55x55"
+                                                data-toggle="tooltip" data-placement="top" title="Metalik G&uuml;m&uuml;ş"
+                                                class="img-responsive animatedleft2" alt="">
+                                              <span>Metalik G&uuml;m&uuml;ş</span></a></li>
+                                          <li><a href="javascript:void(0)" class="colorcat" data-id="115">
+                                              <img
+                                                src="https://www.winsa.com.tr/thumb.php?src=files/pyritejpg_15-12-2021_11-46-43.jpg&amp;size=55x55"
+                                                data-toggle="tooltip" data-placement="top" title="Pyrite"
+                                                class="img-responsive animatedleft2" alt="">
+                                              <span>Pyrite</span></a></li>
+                                          <li><a href="javascript:void(0)" class="colorcat" data-id="116">
+                                              <img
+                                                src="https://www.winsa.com.tr/thumb.php?src=files/vizonjpg_26-08-2020_17-17-51.jpg&amp;size=55x55"
+                                                data-toggle="tooltip" data-placement="top" title="Vizon"
+                                                class="img-responsive animatedleft2" alt="">
+                                              <span>Vizon</span></a></li>
+                                          <li><a href="javascript:void(0)" class="colorcat" data-id="117">
+                                              <img
+                                                src="https://www.winsa.com.tr/thumb.php?src=files/winchesterjpg_26-08-2020_17-17-59.jpg&amp;size=55x55"
+                                                data-toggle="tooltip" data-placement="top" title="Winchester"
+                                                class="img-responsive animatedleft2" alt="">
+                                              <span>Winchester</span></a></li>
+                                          <li><a href="javascript:void(0)" class="colorcat" data-id="384">
+                                              <img
+                                                src="https://www.winsa.com.tr/thumb.php?src=files/sinirsiz-renkjpg_24-11-2020_17-14-10.jpg&amp;size=55x55"
+                                                data-toggle="tooltip" data-placement="top" title="Sınırsız Renk"
+                                                class="img-responsive animatedleft2" alt="">
+                                              <span>Sınırsız Renk</span></a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="imgdiv">
+                              <img
+                                src="https://www.winsa.com.tr/thumb.php?src=files/1-altin-mesepng_26-08-2020_16-31-04.png&amp;size=700x700"
+                                class="colorcats" id="colorcat26" class="img animatedleft3" alt="">
+                              <img
+                                src="https://www.winsa.com.tr/thumb.php?src=files/2-antik-mesepng_26-08-2020_16-52-08.png&amp;size=700x700"
+                                class="colorcats" id="colorcat106" class="img animatedleft3" alt="">
+                              <img
+                                src="https://www.winsa.com.tr/thumb.php?src=files/3-antrasit-gripng_26-08-2020_17-01-06.png&amp;size=700x700"
+                                class="colorcats" id="colorcat107" class="img animatedleft3" alt="">
+                              <img src="https://www.winsa.com.tr/thumb.php?src=files/4-findikpng_26-08-2020_17-01-30.png&amp;size=700x700"
+                                class="colorcats" id="colorcat108" class="img animatedleft3" alt="">
+                              <img
+                                src="https://www.winsa.com.tr/thumb.php?src=files/crown-platin-pencerepng_13-12-2021_20-05-28.png&amp;size=700x700"
+                                class="colorcats" id="colorcat109" class="img animatedleft3" alt="">
+                              <img src="https://www.winsa.com.tr/thumb.php?src=files/6-krempng_26-08-2020_17-06-56.png&amp;size=700x700"
+                                class="colorcats" id="colorcat110" class="img animatedleft3" alt="">
+                              <img
+                                src="https://www.winsa.com.tr/thumb.php?src=files/7-kul-siyahipng_26-08-2020_17-06-50.png&amp;size=700x700"
+                                class="colorcats" id="colorcat111" class="img animatedleft3" alt="">
+                              <img src="https://www.winsa.com.tr/thumb.php?src=files/8-maunpng_26-08-2020_17-07-29.png&amp;size=700x700"
+                                class="colorcats" id="colorcat112" class="img animatedleft3" alt="">
+                              <img
+                                src="https://www.winsa.com.tr/thumb.php?src=files/9-metalik-antrasitpng_26-08-2020_17-07-36.png&amp;size=700x700"
+                                class="colorcats" id="colorcat113" class="img animatedleft3" alt="">
+                              <img
+                                src="https://www.winsa.com.tr/thumb.php?src=files/10-metalik-gumuspng_26-08-2020_17-21-19.png&amp;size=700x700"
+                                class="colorcats" id="colorcat114" class="img animatedleft3" alt="">
+                              <img src="https://www.winsa.com.tr/thumb.php?src=files/pyrite-pvcpng_15-12-2021_11-46-43.png&amp;size=700x700"
+                                class="colorcats" id="colorcat115" class="img animatedleft3" alt="">
+                              <img src="https://www.winsa.com.tr/thumb.php?src=files/12-vizonpng_26-08-2020_17-09-41.png&amp;size=700x700"
+                                class="colorcats" id="colorcat116" class="img animatedleft3" alt="">
+                              <img
+                                src="https://www.winsa.com.tr/thumb.php?src=files/13-winchesterpng_26-08-2020_17-09-49.png&amp;size=700x700"
+                                class="colorcats" id="colorcat117" class="img animatedleft3" alt="">
+                              <img src="https://www.winsa.com.tr/thumb.php?src=files/&amp;size=700x700" class="colorcats" id="colorcat384"
+                                class="img animatedleft3" alt="">
+                            </div>
+                          </div>
+                    </div>
+                    <div class="alt-features-item">
+                        <div class="alt-features-icon"><span class="icon-basket"></span></div>
+                        <h3 class="alt-features-title font-alt">Shop</h3>A wonderful serenity has taken possession of my
+                        entire
+                        soul like these sweet mornings.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {% include 'Base/Footer.html' %}
+
+</body>
+
+</html>

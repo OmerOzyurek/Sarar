@@ -1,0 +1,181 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+
+    {% include 'Base/Header.html' %}
+
+
+
+</head>
+
+<!--
+    data-spy="scroll" data-target=".onpage-navigation" data-offset="90"
+-->
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="90" >
+    <main >
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+
+        {% include 'Base/NavBar2.html '%}
+        <!-- CAROUSEL 1 -->
+        <section class="home-section home-parallax home-fade home-full-height" id="home">
+            <div class="hero-slider">
+                <ul class="slides">
+                    <li class="bg-dark-30 bg-dark" style="background-image:url('static/assets/images/Ana3.jpg');">
+                        <div class="titan-caption">
+                            <div class="caption-content">
+                                <div class="font-alt mb-30 titan-title-size-1">Hello &amp; welcome</div>
+                                <div class="font-alt mb-40 titan-title-size-4">We are Titan</div><a
+                                    class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bg-dark-30 bg-dark" style="background-image:url('static/assets/images/Ana2.jpg');">
+                        <div class="titan-caption">
+                            <div class="caption-content">
+                                <div class="font-alt mb-30 titan-title-size-2">Titan is creative multipurpose html
+                                    template for<br />web developers who change the world
+                                </div><a class="btn btn-border-w btn-round" href="about">Learn More</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bg-dark-30 bg-dark" style="background-image:url('static/assets/images/Ana1.jpg');">
+                        <div class="titan-caption">
+                            <div class="caption-content">
+                                <div class="font-alt mb-30 titan-title-size-1">We build brands that build business</div>
+                                <div class="font-alt mb-40 titan-title-size-3">We are Amazing</div><a
+                                    class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- ANA RESİMler  -->
+        <div class="main">
+            <div class="module-large bg-light "  >
+                <div class="container-fluid">
+                    <div class="row" style="background-image:url('static/assets/images/Ana3.jpg');" >
+                        <div class="col-sm-12 col-lg-12">
+                            <img class="d-block w-100"  src="{% static 'images\CR1.jpg' %} " width="1920px" height="1080px">
+
+                              </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="divider-d">
+
+            <div class="module-large bg-light">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            
+                            <img class="d-block w-100"  src="{% static 'images\CR1.jpg' %} " width="1920px" height="1080px">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+            <section class="module-large">
+                <div class="container">
+                    <ul class="works-grid works-grid-gut works-hover-d" id="works-grid">
+                        <li class="work-item illustration webdesign"><a
+                                href="{% static 'images\IMG-20221104-WA0013.jpg' %}">
+                                <div class="work-image"><img src="{% static 'images\IMG-20221104-WA0013.jpg' %}"
+                                        alt="Portfolio Item" /></div>
+                                <div class="work-caption font-alt">
+                                    <h3 class="work-title">Portrait</h3>
+                                    <div class="work-descr">Lorem ipsum</div>
+                                </div>
+                            </a></li>
+                        <li class="work-item marketing photography"><a
+                                href="{% static 'images\IMG-20221104-WA0013.jpg' %}">
+                                <div class="work-image"><img src="{% static 'images\IMG-20221104-WA0013.jpg' %}"
+                                        alt="Portfolio Item" /></div>
+                                <div class="work-caption font-alt">
+                                    <h3 class="work-title">Landscape</h3>
+                                    <div class="work-descr">Dolor sit</div>
+                                </div>
+                            </a></li>
+                        <li class="work-item illustration photography"><a
+                                href="{% static 'images\IMG-20221104-WA0013.jpg' %}">
+                                <div class="work-image"><img src="{% static 'images\IMG-20221104-WA0013.jpg' %}"
+                                        alt="Portfolio Item" /></div>
+                                <div class="work-caption font-alt">
+                                    <h3 class="work-title">Architecture</h3>
+                                    <div class="work-descr">Amet Consectetur</div>
+                                </div>
+                            </a></li>
+                        <li class="work-item marketing photography"><a
+                                href="{% static 'images\IMG-20221104-WA0013.jpg' %}">
+                                <div class="work-image"><img src="{% static 'images\IMG-20221104-WA0013.jpg' %}"
+                                        alt="Portfolio Item" /></div>
+                                <div class="work-caption font-alt">
+                                    <h3 class="work-title">Life Style</h3>
+                                    <div class="work-descr">Adipisicing elit</div>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+
+        </div>
+        <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+    </main>
+    <!--  
+    JavaScripts
+        
+
+
+
+    -->
+
+    {% include 'Base/Footer.html' %}
+
+    <script>
+        var $item = $('.carousel-item');
+        var $wHeight = $(window).height();
+        $item.eq(0).addClass('active');
+        $item.height($wHeight);
+        $item.addClass('full-screen');
+
+        $('.carousel img').each(function () {
+            var $src = $(this).attr('src');
+            var $color = $(this).attr('data-color');
+            $(this).parent().css({
+                'background-image': 'url(' + $src + ')',
+                'background-color': $color
+            });
+            $(this).remove();
+        });
+
+        $(window).on('resize', function () {
+            $wHeight = $(window).height();
+            $item.height($wHeight);
+        });
+
+        $('.carousel').carousel({
+            interval: 6000,
+            pause: "false"
+        });
+    </script>
+
+
+</body>
+
+</html>

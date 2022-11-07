@@ -1,0 +1,128 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="{% static 'Ek/css/slicknav.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'Ek/css/bootstrap.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'Ek/css/font-awesome.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'Ek/css/elegant-icons.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'Ek/css/owl.carousel.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'Ek/css/style.css' %}" type="text/css">
+
+
+        {% include 'Base/Header.html'%}
+
+</head>
+<body>
+    
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-1 col-6 order-md-1 order-1">
+                        <div class="header__humberger">
+                            <i class="fa fa-bars humberger__open"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-10 order-md-2 order-3">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Home</a></li>
+                                <li><a href="#">Recipes</a>
+                                    <div class="header__megamenu__wrapper">
+                                        <div class="header__megamenu">
+                                            <div class="header__megamenu__item">
+                                                <div class="header__megamenu__item--pic set-bg"
+                                                    data-setbg="img/megamenu/p-1.jpg">
+                                                    <div class="label">Vegan</div>
+                                                </div>
+                                                <div class="header__megamenu__item--text">
+                                                    <h5><a href="#">How to Make a Milkshake With Any Ice Cream ...</a>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="header__megamenu__item">
+                                                <div class="header__megamenu__item--pic set-bg"
+                                                    data-setbg="img/megamenu/p-2.jpg">
+                                                    <div class="label">Vegan</div>
+                                                </div>
+                                                <div class="header__megamenu__item--text">
+                                                    <h5><a href="#">How to Make a Milkshake With Any Ice Cream ...</a>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="header__megamenu__item">
+                                                <div class="header__megamenu__item--pic set-bg"
+                                                    data-setbg="img/megamenu/p-3.jpg">
+                                                    <div class="label">Vegan</div>
+                                                </div>
+                                                <div class="header__megamenu__item--text">
+                                                    <h5><a href="#">How to Make a Milkshake With Any Ice Cream ...</a>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="header__megamenu__item">
+                                                <div class="header__megamenu__item--pic set-bg"
+                                                    data-setbg="img/megamenu/p-4.jpg">
+                                                    <div class="label">Vegan</div>
+                                                </div>
+                                                <div class="header__megamenu__item--text">
+                                                    <h5><a href="#">How to Make a Milkshake With Any Ice Cream ...</a>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="header__megamenu__item">
+                                                <div class="header__megamenu__item--pic set-bg"
+                                                    data-setbg="img/megamenu/p-5.jpg">
+                                                    <div class="label">Vegan</div>
+                                                </div>
+                                                <div class="header__megamenu__item--text">
+                                                    <h5><a href="#">How to Make a Milkshake With Any Ice Cream ...</a>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">Dinner</a></li>
+                                <li><a href="#">Desserts</a></li>
+                                <li class="dropdown"><a href="#">Pages</a>
+                                    <ul class="dropdown__menu">
+                                        <li><a href="./categories-grid.html">Categories Grid</a></li>
+                                        <li><a href="./categories-list.html">Categories List</a></li>
+                                        <li><a href="./single-post.html">Single Post</a></li>
+                                        <li><a href="./signin.html">Sign In</a></li>
+                                        <li><a href="./404.html">404</a></li>
+                                        <li><a href="./typography.html">Typography</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <script src="{% static 'EK/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'Ek/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'Ek/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'Ek/js/main.js' %}"></script>
+    <script src="{% static 'Ek/js/jquery.slicknav.js'%}"></script>
+
+
+
+</body>
+</html>
